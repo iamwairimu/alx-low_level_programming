@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <uniststd.h>
 /**
  * main - Entry point
  * Return: 1 (success)
