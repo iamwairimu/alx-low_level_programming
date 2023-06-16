@@ -6,8 +6,9 @@
 int main(void)
 {
 	char letalphabet;
-	
-	for (letalphabet = 'z'; letalphabet >= 'a'; letalphabet--);{
+
+	for (letalphabet = 'z'; letalphabet >= 'a'; letalphabet--);
+	{
 		putchar(letalphabet);
 	}
 	putchar('\n');
