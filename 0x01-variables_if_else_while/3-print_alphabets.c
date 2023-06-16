@@ -8,12 +8,12 @@ int main(void)
 	int alpha1 = 'a';
 	int alpha2 = 'A';
 
-	while(alpha1 <= 'z')
+	while (alpha1 <= 'z')
 	{
 		putchar (alpha1);
 		alpha1++;
 	}
-	while(alpha2 <= 'Z')
+	while (alpha2 <= 'Z')
 	{
 		putchar (alpha2);
 		alpha2++;
