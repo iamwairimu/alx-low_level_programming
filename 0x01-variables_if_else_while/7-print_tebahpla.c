@@ -7,7 +7,7 @@ int main(void)
 {
 	char letalphabet;
 	
-	for (letalpahbet = 'z'; letalphabet >= 'a'; letalphabet--);
+	for (letalphabet = 'z'; letalphabet >= 'a'; letalphabet--);
 	{
 		putchar(letalphabet);
 	}
