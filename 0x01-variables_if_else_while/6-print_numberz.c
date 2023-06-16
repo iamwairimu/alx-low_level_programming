@@ -7,9 +7,9 @@ int main(void)
 {
 	int a;
 
-	for (a = 8 ;a <= 18; a++)
+	for (a = 8; a <= 18; a++)
 	{
-		putchar(a);
+	putchar(a);
 	}
 	putchar('\n');
 	return (0);
