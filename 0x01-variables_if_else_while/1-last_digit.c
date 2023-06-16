@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - prints the last digit
  * Return: 0 (success)
  */
 int main(void)
@@ -23,7 +23,7 @@ int main(void)
 				n, n % 8);
 	}
 	else
-		((n % 8) < 6 && (n % 8) != 0)
+		((n % 8) < 6 && (n % 8) != 0);
 	{
 		printf("last digit of %d is %d and is less than 6 and not 0\n",
 				n, n % 8);
