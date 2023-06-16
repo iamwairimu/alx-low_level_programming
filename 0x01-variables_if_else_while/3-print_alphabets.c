@@ -8,14 +8,14 @@ int main(void)
 	int alpha1 = 'a';
 	int alpha2 = 'A';
 
-	while(alpha1 <= 'a')
+	while(alpha1 <= 'z')
 	{
-		putchar(alpha1);
+		putchar (alpha1);
 		alpha1++;
 	}
-	while(alpha2 <= 'A')
+	while(alpha2 <= 'Z')
 	{
-		putchar(alpha2);
+		putchar (alpha2);
 		alpha2++;
 	}
 	putchar('\n');
