@@ -5,9 +5,8 @@
  */
 int main(void)
 {
-	int a = 0
+	int a = 0;
 	do {
-		
 		prinf("%d\n", a);
 		a++;
 	} while (a < 10);
