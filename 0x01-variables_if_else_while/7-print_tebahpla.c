@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-	char alphabet;
+	char letalphabet;
 	
-	for (alpahbet = 'z'; alphabet >= 'a'; alphabet--);
+	for (letalpahbet = 'z'; letalphabet >= 'a'; letalphabet--);
 	{
-		putchar(alphabet);
+		putchar(letalphabet);
 	}
 	putchar('\n');
 	return (0);
