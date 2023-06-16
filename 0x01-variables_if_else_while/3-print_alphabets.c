@@ -5,18 +5,18 @@
  */
 int main(void)
 {
-	int ch = 'a';
-	int ch = 'A';
+	int alpha1 = 'a';
+	int alpha2 = 'A';
 
-	while(ch <= 'a')
+	while(alpha1 <= 'a')
 	{
-		putchar(ch);
-		ch++;
+		putchar(alpha1);
+		alpha1++;
 	}
-	while(ch <= 'A')
+	while(alpha2 <= 'A')
 	{
-		putchar(ch);
-		ch++;
+		putchar(alpha2);
+		alpha2++;
 	}
 	putchar('\n');
 	return (0);
