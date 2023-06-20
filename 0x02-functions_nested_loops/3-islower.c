@@ -3,7 +3,7 @@
  * _islower - checks for lowercase character
  * Return: 0 (success)
  */
-int _islower(int c);
+int _islower(void);
 
 {
 	if (c == 97 && c < 122)
