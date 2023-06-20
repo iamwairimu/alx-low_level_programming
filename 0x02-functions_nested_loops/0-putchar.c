@@ -1,4 +1,4 @@
-#include <main.h>
+#include "0x02-functions_nested_loops/main.h"
 /**
  * main - program that prints _putchar
  * Return: 0 (success)
