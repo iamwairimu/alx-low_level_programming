@@ -35,6 +35,6 @@ int main(void)
 			putchar(' ');
 		}
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
