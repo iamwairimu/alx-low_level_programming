@@ -21,11 +21,11 @@ int main(void)
 		{
 			printf(" fizzbuzz");
 		}
-		else if (i==1)
+		else if (i == 1)
 		{
 			printf("%d", i);
 		}
-		else 
+		else
 		{
 			printf(" %d", i);
 		}
