@@ -2,36 +2,29 @@
 #include <stdlib.h>
 #include <stddef.h>
 /**
- * free_listint_safe - frees a list
+ * free_listint_safe - frees a listint_t list
  * @h: double pointer
  * Returns: size of list that was free’d
  */
 size_t free_listint_safe(listint_t **h)
 {
-	size_t len = 0;
-	int diff;
-	listint_t *temp;
+	listint_t *current = *h;
+	size_t count = 0;
 
-	if (!h || !*h)
-		return (0);
-	while (*h)
+	if (*h == NULL)
 	{
-		diff = *h - (*h)->next;
-		if (diff > 0)
-		{
-			temp = (*h)->next;
-			free(*h);
-			*h = temp;
-			len++;
-		}
-		else
-		{
-			free(*h);
-			*h = NULL;
-			len++;
-			break;
-		}
+		return (0);
+	}
+
+	current = *h;
+
+	while (current != NULL)
+	{
+		listint_t *next = current->next;
+		free(current);
+		current = next;
+		count++;
 	}
 	*h = NULL;
-	return (len);
+	return (count);
 }
