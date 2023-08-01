@@ -4,27 +4,31 @@
 /**
  * free_listint_safe - frees a listint_t list
  * @h: double pointer
- * Returns: size of list that was free’d
+ * Returns: size of list that was free’d,
+ * if list is empty, return 0
  */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *current = *h;
+	listint_t *current, *tmp;
 	size_t count = 0;
 
-	if (*h == NULL)
+	if (h == NULL || *h == NULL)
 	{
 		return (0);
 	}
-
 	current = *h;
 
 	while (current != NULL)
 	{
-		listint_t *next = current->next;
+		tmp = current->next;
 		free(current);
-		current = next;
+		current = tmp;
 		count++;
+		if (current == *h)
+		{
+			*h = NULL;
+			break;
+		}
 	}
-	*h = NULL;
 	return (count);
 }
