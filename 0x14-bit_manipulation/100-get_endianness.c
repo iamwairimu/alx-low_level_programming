@@ -6,20 +6,8 @@
  */
 int get_endianness(void)
 {
-	union
-	{
-		int i;
-		char c[4];
-	} u;
+	unsigned int i = 1;
+	char *c = (char *) &i;
 
-	u.i = 1;
-
-	if (u.c[0] == 1)
-	{
-		return (0);
-	}
-	else
-	{
-		return (1);
-	}
+	return (*c);
 }
