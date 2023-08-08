@@ -40,7 +40,6 @@ void close_file(int fd)
  * @argc: number of arguments
  * @argv: array
  * Return : 0 (success)
- *
  * Description: if argument count is incorrect - exit code 97,
  * if file_from doesn't exist or can;t be read - exit code 98,
  * if file_to can't be created or written - exit code 99,
